@@ -17,7 +17,7 @@ export const Home = () => {
         <div className={!rightBar ? 'Home_Component' : 'Set_Fixed'}>
             <div className={!rightBar ? 'Display_None' : 'Overlay'}></div>
             <Helmet>
-                <title>Home</title>   
+                <title>Blogging</title>   
             </Helmet>
             <Header />
             <ScrollToTop />
