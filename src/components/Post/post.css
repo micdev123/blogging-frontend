@@ -1,0 +1,450 @@
+.Post_Component {
+    width: 100%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    align-items: center;
+    gap: 0 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+
+.Post_Contents_Head, .Post_Head_Right_Foot_ {
+    display: flex;
+    align-items: center;
+}
+
+.Small_Screen_Date {
+    display: none;
+}
+
+.Post_Head_Left {
+    width: 3rem;
+    height: 2.8rem;
+    margin-right: 10px;
+}
+
+.Post_Head_Left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 0.5px solid #e9e9e9;
+}
+
+.Creator {
+    /* background-color: red; */
+    width: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.Creator h1 {
+    color: #4f4f4f;
+}
+
+.Post_Head_Right {
+    width: 100%;
+    /* display: flex; */
+}
+
+.Post_Head_Right .Link {
+    text-decoration: none;
+    color: #444444;
+}
+
+.Post_Head_Right .Link h2 {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.Post_Head_Right_Foot_ {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.Post_Head_Right_Foot_ p {
+    font-size: 0.8rem;
+    color: #858585;
+}
+
+.line {
+    width: 1.5px;
+    height: 1rem;
+    margin: 0 5px;
+    background-color: #858585;
+}
+
+.Post_Contents_Body{
+    margin: 5px 0;
+}
+
+.Post_Contents_Body .Link {
+    text-decoration: none;
+    color: black;
+}
+
+.Post_Contents_Body_Title {
+    font-weight: 550;
+    color: #4f4f4f;
+    font-size: 1.5rem;
+}
+
+.Post_Contents_Body_Desc {
+    color: #858585;
+    font-weight: normal;
+    font-size: 0.9rem;
+    /* margin: 5px 0; */
+}
+
+.Post_Contents_Body_Tags {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Post_Contents_Body_Tags .Tag {
+    margin-right: 10px;
+    background-color: #F1EFEF;
+    padding: 5px 10px;
+    color: #858585;
+    font-weight: normal;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.Post_Contents_Foot {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Post_Contents_Foot p {
+    font-weight: normal;
+    color: #4b4b4b;
+    font-size: 0.9rem;
+}
+
+.Post_Contents_Foot .info {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: all .3s ease;
+}
+
+.Post_Contents_Foot .info .icon {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.Post_Contents_Foot .comment {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.Post_Image {
+    width: 100%;
+    height: 12rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.Post_Image img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: 0%;
+    border-radius: 5px;
+}
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Post_Component {
+        width: 100%;
+    }
+
+    .Post_Contents {
+        width: 100%;
+    }
+
+    .Post_Head_Left {
+        width: 4rem;
+        height: 3.5rem;
+        /* background-color: red; */
+    }
+    
+
+    .Post_Head_Left img {
+        border: 0.7px solid #e9e9e9;
+    }
+
+    .Creator h1 {
+        font-size: 2rem;
+    }
+
+
+    .Post_Head_Right .Link h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .Post_Head_Right_Foot_ p {
+        font-size: 1rem;
+    }
+
+    .line {
+        width: 1.6px;
+        height: 1.4rem;
+        margin: 0 8px;
+    }
+
+    .Post_Contents_Body {
+        margin: 5px 0;
+    }
+
+    .Post_Contents_Body .Link {
+        color: black;
+    }
+
+    .Post_Contents_Body_Title {
+        font-size: 1.7rem;
+    }
+
+    .Post_Contents_Body_Desc {
+        font-size: 1.1rem;
+        margin: 5px 0;
+    }
+
+    .Post_Contents_Body_Tags {
+        margin-top: 15px;
+    }
+
+    .Post_Contents_Body_Tags .Tag {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .Post_Contents_Foot {
+        margin-top: 15px;
+    }
+
+    .Post_Contents_Foot p {
+        font-weight: normal;
+        color: #4f4f4f;
+        font-size: 1.18rem;
+    }
+
+    .Post_Contents_Foot .info {
+        font-size: 1.18rem;
+    }
+
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Post_Component {
+        width: 100%;
+        padding: 20px 10px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Post_Contents {
+        width: 100%;
+    }
+
+    .Small_Screen_Date {
+        display: block;
+        margin: 10px 0;
+        font-size: 0.85rem;
+        font-weight: 550;
+        color: #747474;
+    }
+
+    .Post_Contents_Head {
+        margin-top: 10px;
+    }
+
+    .Post_Head_Left {
+        width: 3.2rem;
+        height: 2.7rem;
+        /* background-color: red; */
+    }
+
+    .Post_Head_Left img {
+        border: 0.7px solid #e9e9e9;
+    }
+
+    .Creator h1 {
+        font-size: 1.8rem;
+    }
+
+    .Post_Head_Right {
+        margin-left: 0;
+    }
+
+    .Post_Head_Right .Link h2 {
+        font-size: 1.1rem;
+    }
+
+    .Post_Head_Right_Foot_ p {
+        font-size: 0.9rem;
+        margin-top: 4px;
+    }
+
+    .line, .Date {
+        margin: 0 8px;
+        display: none;
+    }
+
+    .Post_Contents_Body {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .Post_Contents_Body_Title {
+        font-size: 1.4rem;
+    }
+
+    .Post_Contents_Body_Desc {
+        font-size: 0.98rem;
+        margin: 5px 0;
+        line-height: 1.5rem;
+    }
+
+    .Post_Contents_Body_Tags {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .Post_Contents_Body_Tags .Tag {
+        margin-right: 7px;
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    .Post_Contents_Foot {
+        margin-top: 15px;
+    }
+
+    .Post_Contents_Foot p {
+        font-weight: normal;
+        color: #4f4f4f;
+        font-size: 1rem;
+    }
+
+    .Post_Contents_Foot .line {
+        display: block;
+        width: 1.5px;
+        height: 1.3rem;
+        margin: 0 8px;
+    }
+
+    .Post_Contents_Foot .info {
+        font-size: 1rem;
+    }
+
+    .Post_Contents_Foot .info .icon {
+        font-size: 1.05rem;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .Post_Component {
+        width: 100%;
+    }
+    .Post_Contents {
+        width: 100%;
+    }
+
+    .Post_Head_Left {
+        width: 3.5rem;
+        height: 2.8rem;
+        /* background-color: red; */
+    }
+
+
+    .Post_Head_Left img {
+        border: 0.7px solid #e9e9e9;
+    }
+
+    .Creator h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .Post_Head_Right .Link h2 {
+        font-size: 1.19rem;
+    }
+
+
+    .Post_Head_Right_Foot_ p {
+        font-size: 0.8rem;
+        margin-top: 3px;
+    }
+
+    .line {
+        width: 1.8px;
+        height: 1.3rem;
+        margin: 0 8px;
+    }
+
+    .Post_Contents_Body {
+        margin: 5px 0;
+    }
+
+    .Post_Contents_Body .Link {
+        color: black;
+    }
+
+    .Post_Contents_Body_Title {
+        font-size: 1.5rem;
+    }
+
+    .Post_Contents_Body_Desc {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    .Post_Contents_Body_Tags {
+        margin-top: 15px;
+    }
+
+    .Post_Contents_Body_Tags .Tag {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    .Post_Contents_Foot {
+        margin-top: 15px;
+    }
+
+    .Post_Contents_Foot p {
+        font-weight: normal;
+        color: #4f4f4f;
+        font-size: 1rem;
+    }
+
+    .Post_Contents_Foot .info {
+        font-size: 1.1rem;
+    }
+
+}

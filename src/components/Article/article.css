@@ -1,0 +1,280 @@
+.Article_Component {
+    width: 100%;
+}
+
+.Article_Image {
+    width: 100%;
+    height: 13rem;
+
+}
+
+.Article_Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.Author_Article_Contents .Link {
+    text-decoration: none;
+}
+
+.Author_Article_Date {
+    font-weight: 500;
+    color: #383737;
+    margin: 5px 0;
+    font-size: 0.85rem;
+}
+
+.Author_Article_Contents_Head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+
+
+.Article_Head_Left {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-right: 10px;
+}
+
+.Article_Head_Left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 0.5px solid #e9e9e9;
+}
+
+.Author_Article_Contents_Head .Creator_ {
+    margin-right: 5px;
+    /* background-color: red; */
+    color: #383737;
+}
+
+.Article_Head_Right {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Article_Head_Right h2 {
+    font-weight: 550;
+    font-size: 1.19rem;
+    color: #383737;
+    margin-bottom: 3px;
+}
+
+
+.Article_Head_Right_Foot p {
+    font-size: 0.8rem;
+    color: #383737;
+}
+
+
+.Article_Contents_Body {
+    margin: 5px 0;
+}
+
+.Small_Screen_Post_Title {
+    display: none;
+}
+
+.Article_Contents_Body_Title {
+    width: 100%;
+    font-weight: 550;
+    color: #4f4f4f;
+    font-size: 1.35rem;
+}
+
+.Article_Contents_Body_Desc {
+    color: #6e6d6d;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0;
+}
+
+
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Author_Article_Date {
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .Author_Article_Contents_Head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* margin-top: 10px; */
+    }
+
+
+    .Article_Head_Left {
+        width: 2.7rem;
+        height: 2.7rem;
+        /* margin-right: 10px; */
+    }
+
+    .Article_Head_Left img {
+        border: 0.7px solid #e9e9e9;
+    }
+
+    .Author_Article_Contents_Head .Creator_ {
+        margin-right: 8px;
+        /* background-color: red; */
+    }
+
+    .Author_Article_Contents_Head .Creator_ h1 {
+        font-size: 2rem;
+        color: #4f4f4f;
+    }
+
+
+    .Article_Head_Right h2 {
+        font-size: 1.25rem;
+    }
+
+
+    .Article_Head_Right_Foot p {
+        font-size: 1rem;
+    }
+
+
+    .Article_Contents_Body {
+        margin: 5px 0;
+    }
+
+
+    .Article_Contents_Body_Title {
+        display: none;
+    }
+
+
+    .Small_Screen_Post_Title {
+        display: block;
+        font-weight: 550;
+        color: #4f4f4f;
+        font-size: 1.85rem;
+    }
+
+    .Article_Contents_Body_Desc {
+        font-size: 1.1rem;
+        margin: 5px 0;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Author_Article_Date {
+        margin: 10px 0;
+        font-size: 0.85rem;
+    }
+
+    .Author_Article_Contents_Head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* margin-top: 10px; */
+    }
+
+
+    .Article_Head_Left {
+        width: 3.2rem;
+        height: 2.7rem;
+        margin-right: 8px;
+    }
+
+    .Article_Head_Left img {
+        border: 0.7px solid #e9e9e9;
+    }
+
+    .Author_Article_Contents_Head .Creator_ {
+        margin-right: 8px;
+        /* background-color: red; */
+    }
+
+    .Author_Article_Contents_Head .Creator_ h1 {
+        font-size: 1.8rem;
+        color: #4f4f4f;
+    }
+
+
+    .Article_Head_Right h2 {
+        font-size: 1.1rem;
+    }
+
+
+    .Article_Head_Right_Foot p {
+        font-size: 0.85rem;
+    }
+
+
+    .Article_Contents_Body {
+        margin: 5px 0;
+    }
+
+
+    .Article_Contents_Body_Title {
+        font-weight: 550;
+        color: #4f4f4f;
+        font-size: 1.35rem;
+    }
+
+    .Article_Contents_Body_Desc {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .Author_Article_Date {
+        margin: 10px 0;
+        font-size: 1.05rem;
+    }
+
+    .Article_Head_Left {
+        width: 3.2rem;
+        height: 2.7rem;
+        margin-right: 10px;
+    }
+
+    .Article_Head_Left img {
+        border: 0.7px solid #e9e9e9;
+    }
+
+    .Author_Article_Contents_Head .Creator_ h1 {
+        font-size: 1.8rem;
+    }
+
+    .Article_Head_Right h2 {
+        font-size: 1.1rem;
+    }
+
+
+    .Article_Head_Right_Foot p {
+        font-size: 0.9rem;
+    }
+
+
+    .Small_Screen_Post_Title {
+        display: block;
+        font-weight: 550;
+        color: #4f4f4f;
+        font-size: 1.4rem;
+    }
+
+    .Article_Contents_Body_Desc {
+        font-size: 1.05rem;
+        margin: 5px 0;
+    }
+}

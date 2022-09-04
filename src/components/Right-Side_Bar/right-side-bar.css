@@ -1,0 +1,11 @@
+.Right_Side_Bar_Component {
+    width: 100%;
+    padding: 3rem 1rem;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.Categories {
+    margin-bottom: 5rem;
+}
+

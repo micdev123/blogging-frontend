@@ -1,0 +1,82 @@
+.RightSideCategory_Component {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+    /* background-color: red; */
+}
+
+.RightSideCategory_Component .Tag {
+    background-color: #fcfcfc;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #444444;
+    text-align: center;
+}
+
+.RightSideCategory_Component .Tag p::first-letter {
+    text-transform: capitalize;
+}
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .RightSideCategory_Component {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 10px;
+        /* background-color: red; */
+    }
+
+    .RightSideCategory_Component .Tag {
+        background-color: #fcfcfc;
+        padding: 5px 10px;
+        
+    }
+
+    .RightSideCategory_Component .Tag p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .RightSideCategory_Component {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 10px;
+        /* background-color: red; */
+    }
+
+    .RightSideCategory_Component .Tag {
+        background-color: #ffffff;
+        padding: 7px 10px;
+
+    }
+
+    .RightSideCategory_Component .Tag p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .RightSideCategory_Component {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 10px;
+        /* background-color: red; */
+    }
+
+    .RightSideCategory_Component .Tag {
+        background-color: #ffffff;
+        padding: 7px 10px;
+
+    }
+
+    .RightSideCategory_Component .Tag p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}

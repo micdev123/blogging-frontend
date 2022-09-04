@@ -1,0 +1,510 @@
+.Profile_Component {
+    background-color: white;
+    padding: 2rem;
+}
+
+.Profile_Component > h2 {
+    font-weight: 550;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #3d3d3d;
+}
+
+.Profile_Component > h2 .icon {
+    margin-right: 5px;
+    font-size: 1.6rem;
+}
+
+.Profile_Form {
+    width: 100%;
+}
+
+.Profile_Form_Container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+}
+
+.Form_Group_ {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.Form_Group_ > p {
+    font-size: 0.9rem;
+    color: #757474;
+}
+
+.Form_Group_ input {
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    outline: none;
+    color: #3d3d3d;
+}
+
+
+.Form_Group_ label {
+    font-size: 1.1rem;
+    font-weight: 550;
+    margin-bottom: 15px;
+    color: #3d3d3d;
+}
+
+.Form_Group_ .Main_Label {
+    font-size: 1.3rem;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #3d3d3d;
+}
+
+.Form_Group_ textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1.7px solid #eeeeee;
+    color: #3d3d3d;
+}
+
+.Profile_Photo {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.Profile_Photo img {
+    width: 6rem;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.5px solid #e7e5e5;
+}
+
+.Profile_Photo .icon {
+    cursor: pointer;
+}
+
+.short_bio {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 20px;
+}
+
+
+
+.Update_Profile {
+    padding: 5px 30px;
+    font-size: 1rem;
+    background-color: #3B698E;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Username__Url {
+    margin-bottom: 20px;
+}
+
+.username_url label {
+    margin-right: 10px;
+}
+
+.Url_Small, .Url_Large {
+    font-size: 0.8rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+
+.Username__Url .icon {
+    margin-right: 3px;
+}
+
+.Url_Small {
+    display: none;
+}
+
+.Connection {
+    display: flex;
+    flex-direction: column;
+}
+
+.Connection input {
+    margin-bottom: 20px;
+}
+
+.Connection label {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+.Connection .icon {
+    margin-right: 5px;
+}
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Profile_Component>h2 {
+        border-bottom: 1.7px solid #d5d5d5;
+        font-size: 1.55rem;
+    }
+
+    .Profile_Component>h2 .icon {
+        font-size: 1.65rem;
+    }
+
+    .Profile_Form_Container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0 30px;
+    }
+
+    .Form_Group_ {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .Form_Group_ input {
+        border-bottom: 1.7px solid #ebebeb;
+        font-size: 1.15rem;
+    }
+
+
+    .Form_Group_ label {
+        font-size: 1.25rem;
+    }
+
+    .Form_Group_ .Main_Label {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .Form_Group_ textarea {
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        border-bottom: 1.7px solid #eeeeee;
+    }
+
+    .Profile_Photo {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .Profile_Photo img {
+        width: 8rem;
+        height: 100%;
+    }
+
+    .Profile_Photo .icon {
+        cursor: pointer;
+    }
+
+    .short_bio {
+        width: 100%;
+        height: 10rem;
+        margin-bottom: 20px;
+    }
+
+
+    .Update_Profile {
+        padding: 8px 30px;
+        font-size: 1.3rem;
+    }
+
+    .Username__Url {
+        margin-bottom: 30px;
+    }
+
+    .username_url label {
+        margin-right: 10px;
+        font-size: 1.25rem;
+    }
+
+    .username_url input {
+        font-size: 1.1rem;
+    }
+
+    .Url_Large {
+        font-size: 1.1rem;
+        font-weight: 550;
+        display: flex;
+        align-items: center;
+    }
+
+    .Url_Small {
+        display: none;
+    }
+
+
+    .Connection label {
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+
+    .Connection input {
+        margin-bottom: 20px;
+    }
+
+    .Connection .icon {
+        margin-right: 5px;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Profile_Component {
+        background-color: white;
+        padding: 2rem 10px;
+    }
+
+    .Profile_Component>h2 {
+        border-bottom: 1.7px solid #d5d5d5;
+        font-size: 1.35rem;
+    }
+
+    .Profile_Component>h2 .icon {
+        font-size: 1.45rem;
+    }
+
+    .Profile_Form_Container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px 0;
+    }
+
+    .Form_Group_ {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .Form_Group_ input {
+        border-bottom: 1.7px solid #ebebeb;
+        font-size: 1rem;
+    }
+
+
+    .Form_Group_ label {
+        font-size: 1.12rem;
+    }
+
+    .Form_Group_ .Main_Label {
+        font-size: 1.12rem;
+        margin-bottom: 10px;
+    }
+
+    .Form_Group_ textarea {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        border-bottom: 1.5px solid #eeeeee;
+    }
+
+    .Profile_Photo {
+        width: 100%;
+        height: 5rem;
+    }
+
+    .Profile_Photo img {
+        width: 5rem;
+        height: 100%;
+    }
+
+    .Profile_Photo .icon {
+        cursor: pointer;
+    }
+
+    .short_bio {
+        width: 100%;
+        height: 10rem;
+        margin-bottom: 20px;
+    }
+
+
+    .Username__Url {
+        margin-bottom: 30px;
+    }
+
+    .username_url label {
+        margin-right: 10px;
+        font-size: 1.1rem;
+    }
+
+    .username_url input {
+        font-size: 1rem;
+    }
+
+    .Url_Small {
+        font-size: 1rem;
+        font-weight: 550;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Url_Large {
+        display: none;
+    }
+
+
+    .Connection label {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .Connection input {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .Connection .icon {
+        margin-right: 5px;
+    }
+
+    .Update_Profile {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .Profile_Component {
+        background-color: white;
+        padding: 2rem 10px;
+    }
+
+    .Profile_Component>h2 {
+        border-bottom: 1.7px solid #d5d5d5;
+        font-size: 1.25rem;
+    }
+
+    .Profile_Component>h2 .icon {
+        font-size: 1.35rem;
+    }
+
+    .Profile_Form_Container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px 0;
+    }
+
+    .Form_Group_ {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .Form_Group_ input {
+        border-bottom: 1.7px solid #ebebeb;
+        font-size: 1rem;
+    }
+
+
+    .Form_Group_ label {
+        font-size: 1.2rem;
+    }
+
+    .Form_Group_ .Main_Label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .Form_Group_ textarea {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        border-bottom: 1.5px solid #eeeeee;
+    }
+
+    .Profile_Photo {
+        width: 100%;
+        height: 5rem;
+    }
+
+    .Profile_Photo img {
+        width: 5rem;
+        height: 100%;
+    }
+
+    .Profile_Photo .icon {
+        cursor: pointer;
+    }
+
+    .short_bio {
+        width: 100%;
+        height: 10rem;
+        margin-bottom: 20px;
+    }
+
+
+    .Username__Url {
+        margin-bottom: 30px;
+    }
+
+    .username_url label {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+
+    .username_url input {
+        font-size: 1rem;
+    }
+
+    .Url_Small {
+        font-size: 1rem;
+        font-weight: 550;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Url_Large {
+        display: none;
+    }
+
+
+    .Connection label {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+
+    .Connection input {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .Connection .icon {
+        margin-right: 5px;
+    }
+
+    .Update_Profile {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,205 @@
+.Header_Component {
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(to right top, #6c8faa, #5780a2, #41719a, #2b6292, #0d538a);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.Header_Container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.Header_contents {
+    color: white;
+}
+
+.Header_contents h2 {
+    font-weight: normal;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+    font-family: 'Segoe UI';
+}
+
+.Header_contents p {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+}
+
+.Header_btn {
+    font-size: 1rem;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+    font-weight: normal;
+    color: #343434;
+    cursor: pointer;
+    background-color: #e4ebef;
+    text-decoration: none;
+}
+
+.Header_btn:hover {
+    background-color: #f7f7f7;
+}
+
+.Header_Image {
+    width: 100%;
+    height: 85%;
+}
+
+.Header_Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Header_Component {
+        height: 90vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .Header_Container {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .Header_contents h2 {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+
+    .Header_contents p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .Header_btn {
+        font-size: 1.3rem;
+        padding: 9px 15px;
+    }
+
+    .Header_Image {
+        width: 100%;
+        height: 35rem;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header_Image img {
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Header_Component {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header_Container {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .Header_contents h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .Header_contents p {
+        font-size: 1.15rem;
+        margin-top: 13px;
+        margin-bottom: 30px;
+    }
+
+    .Header_btn {
+        font-size: 1rem;
+        padding: 7px 15px;
+    }
+
+    .Header_Image {
+        width: 100%;
+        height: 21rem;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header_Image img {
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .Header_Component {
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .Header_Container {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .Header_contents h2 {
+        font-size: 1.75rem;
+        line-height: 1.9rem;
+    }
+
+    .Header_contents p {
+        font-size: 1.15rem;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .Header_btn {
+        font-size: 1.1rem;
+        padding: 9px 15px;
+    }
+
+    .Header_Image {
+        width: 100%;
+        height: 20rem;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Header_Image img {
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+}

@@ -36,3 +36,579 @@
     transform: rotate(360deg);
   }
 }
+
+#light {
+  background-color: #fdfdfd;
+}
+
+#dark {
+  background-color: #081423;
+}
+
+#dark .Dark_Mode_Background {
+  background-color: #021123;
+  color: white;
+}
+
+#dark .Tag,
+#dark .Keyword {
+  background-color: #122030;
+  color: #e5e5e5;
+}
+
+#dark .Dark_Mode {
+  color: #ebebeb;
+}
+
+#dark .Dark_Mode_P {
+  color: #b9b9b9;
+  font-weight: normal;
+}
+
+#dark .Article,
+#dark .Author_Work,
+#dark .My_Posts,
+#dark .Comment_Btn {
+  border: 1px solid #2c2c2c;
+}
+
+#dark .Close_Btn {
+  color: #021123;
+}
+
+#dark .Settings_Links .Link:hover {
+  background-color: #0b2039;
+  color: white;
+}
+
+#dark .ToggleBtn .icon {
+  color: white;
+}
+
+.Nav_Container {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 1px 1px rgba(228, 228, 228, 0.2);
+}
+
+.navigation {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 550;
+  text-decoration: none;
+  color: #2b2a2a;
+  font-size: 1.4rem;
+}
+
+.Mobile_NavLinks {
+  display: none;
+}
+
+.Close_Btn, .Menu_Btn {
+  display: none;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navLinks .navLink {
+  font-weight: 550;
+  margin-left: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #2b2a2a;
+}
+
+.navLinks .state p:first-child {
+  font-size: 0.8rem;
+}
+
+.Write {
+  background-color: #3B698E;
+  padding: 4px 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.Write p {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.Write .icon {
+  margin-right: 10px;
+}
+
+.LoginUser {
+  display: flex;
+  align-items: center;
+}
+
+.UserPhoto {
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: red; */
+}
+
+.UserPhoto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 0.5px solid #949393;
+}
+
+.UserLogo {
+  background-color: #070754;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.UserLogo h1 {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+.DropDown {
+  margin-left: 5px;
+  position: relative;
+}
+
+.DropDown .User {
+  font-size: 1rem;
+}
+
+.DropDown .User {
+  display: flex;
+  align-items: flex-end;
+}
+
+.DropDown .User .icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.Dropdown_Menu {
+  position: absolute;
+  top: 2.35rem;
+  right: 5px;
+  background-color: #f8f8f8;
+  width: 10rem;
+  padding: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dropdown_Menu .Link {
+  text-decoration: none;
+  color: #454545;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+}
+
+.DropDown .Link .icon {
+  margin-right: 5px;
+}
+
+.Dropdown_Menu .Logout {
+  margin-top: 15px;
+}
+
+.BigScreen {
+  display: none;
+}
+
+.Switch {
+  margin-left: 25px;
+}
+
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+  .Nav_Container {
+    padding: 20px 0;
+  }
+
+
+  .logo {
+    font-size: 1.85rem;
+  }
+
+  .navLinks .navLink {
+    font-size: 1.4rem;
+  }
+
+
+  .navLinks .state p:first-child {
+    font-size: 1rem;
+  }
+
+  .Write {
+    padding: 5.5px 15px;
+  }
+
+  .Write p {
+    font-size: 1.2rem;
+  }
+
+  .Write .icon {
+    margin-right: 10px;
+  }
+
+
+  .UserPhoto {
+    width: 3rem;
+    height: 3rem;
+    /* background-color: red; */
+  }
+
+
+  .UserLogo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .UserLogo h1 {
+    font-size: 1.5rem;
+  }
+
+
+  .DropDown {
+    margin-left: 5px;
+  }
+
+  .DropDown .User {
+    display: none;
+  }
+
+  .BigScreen {
+    display: block;
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .Dropdown_Menu {
+    position: absolute;
+    top: 3.8rem;
+    right: 5px;
+    width: 15rem;
+  }
+
+  .Dropdown_Menu .Link {
+    font-size: 1.6rem;
+  }
+
+  .DropDown .Link .icon {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  .Nav_Container {
+    padding: 10px 0;
+    position: relative;
+  }
+
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .Menu_Btn, .Close_Btn {
+    display: block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    /* z-index: 10000; */
+  }
+
+  .Mobile_NavLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    padding: 2rem 1rem;
+    transition: all .3s ease;
+  }
+
+  .Mobile_NavLinks .Mobile_NavLinks_Head {
+    width: 95%;
+    margin: 0 auto 20px auto;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    /* right: 30px; */
+    /* margin-bottom: 20px; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Mobile_NavLink_User {
+    width: 90%;
+    margin: 2rem 0;
+  }
+
+  .UserPhoto {
+    width: 2rem;
+    height: 2rem;
+    /* background-color: red; */
+  }
+
+
+  .UserLogo_ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .UserLogo_ h1 {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    /* padding: 20px; */
+    background-color: #070754;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 550;
+
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .state {
+    width: 90%;
+    display: block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: #f1fafb;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: 550;
+    color: #2c2c2c;
+  }
+
+  .state p:last-child {
+    font-size: 1.18rem;
+  }
+
+  .Write {
+    width: 90%;
+    padding: 7px 15px;
+  }
+
+  .Write p {
+    font-size: 1.1rem;
+  }
+
+  .Write .icon {
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+
+  .User_Menu__ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .User_Menu__ .Link {
+    width: 90%;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #444444;
+    margin-top: 20px;
+    background-color: #f1fafb;
+    border-radius: 5px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .User_Menu__ .Link .icon {
+    margin-right: 10px;
+  }
+
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+  .Nav_Container {
+    padding: 10px 0;
+    position: relative;
+  }
+
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .Menu_Btn,
+  .Close_Btn {
+    display: block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    /* z-index: 10000; */
+  }
+
+  .Mobile_NavLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    padding: 2rem 1rem;
+    transition: all .3s ease;
+  }
+
+  .Mobile_NavLinks .Mobile_NavLinks_Head {
+    width: 95%;
+    margin: 0 auto 20px auto;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    /* right: 30px; */
+    /* margin-bottom: 20px; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Mobile_NavLink_User {
+    width: 90%;
+    margin: 2rem 0;
+  }
+
+  .UserPhoto {
+    width: 2rem;
+    height: 2rem;
+    /* background-color: red; */
+  }
+
+
+  .UserLogo_ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .UserLogo_ h1 {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    /* padding: 20px; */
+    background-color: #070754;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 550;
+
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .state {
+    width: 100%;
+    display: block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: #f1fafb;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: 550;
+  }
+
+  .state p:last-child {
+    font-size: 1.18rem;
+  }
+
+  .Write {
+    width: 90%;
+    padding: 7px 15px;
+  }
+
+  .Write p {
+    font-size: 1.1rem;
+  }
+
+  .Write .icon {
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+
+  .User_Menu__ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .User_Menu__ .Link {
+    width: 90%;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #444444;
+    margin-top: 20px;
+    background-color: #f1fafb;
+    border-radius: 5px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .User_Menu__ .Link .icon {
+    margin-right: 10px;
+  }
+}
+
+

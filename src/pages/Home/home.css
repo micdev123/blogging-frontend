@@ -1,0 +1,104 @@
+.Home_Component {
+    position: relative;
+}
+
+.Set_Fixed {
+    position: fixed;
+}
+
+.Display_None {
+    display: none;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 98.5%;
+    opacity: 0.3;
+}
+
+.Right_Sidebar_Icon {
+    position: fixed;
+    bottom: 2rem;
+    right: 20px;
+    background-color: #3B698E;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+
+.Right_Sidebar_Icon .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Right_Side_Component {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 31rem;
+    height: 100%;
+    background-color: #fcfcfc;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    transition: all .3s ease;
+    /* display: none; */
+}
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Right_Sidebar_Icon {
+        display: block;
+        padding: 11px;
+    }
+
+    .Right_Sidebar_Icon .icon {
+        font-size: 1.75rem;
+    }
+
+    .Right_Side_Component {
+        display: block;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Right_Sidebar_Icon {
+        padding: 9px;
+        display: block;
+    }
+
+    .Right_Sidebar_Icon .icon {
+        font-size: 1.2rem;
+    }
+
+    .Right_Side_Component {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .Right_Sidebar_Icon {
+        padding: 9px;
+        display: block;
+    }
+
+    .Right_Sidebar_Icon .icon {
+        font-size: 1.2rem;
+    }
+
+    .Right_Side_Component {
+        display: block;
+        width: 100%;
+    }
+}

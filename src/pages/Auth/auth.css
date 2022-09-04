@@ -1,0 +1,179 @@
+.Auth_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 45vw; */
+    margin: 2rem 0;
+    min-height: 80vh;
+}
+
+.msg {
+    background-color: #d55656;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.Auth_Form {
+    width: 28rem;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 2px #dfdfdf;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+
+.Auth_Form h2 {
+    font-weight: 550;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Auth_Form input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #545353;
+    outline: none;
+}
+
+.Auth_Btn{
+    background-color: #0b295c;
+    padding: 7px 0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    outline: none;
+    margin: 0  0 25px 0;
+}
+
+.Auth_Form p {
+    text-align: center;
+    margin: 5px 0;
+    font-weight: 550;
+}
+
+.Info {
+    width: 100%;
+    padding: 6px;
+    font-size: 1rem;
+    /* margin-top: 15px; */
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 2.5px #b5b4b4;
+}
+
+.Info .link {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+.Password {
+    position: relative;
+}
+
+.ShowPassword {
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Auth_Form {
+        width: 35rem;
+    }
+
+
+    .Auth_Form h2 {
+        font-size: 2rem;
+    }
+
+    .Auth_Form input {
+        font-size: 1.5rem;
+        border-bottom: 1.7px solid #545353;
+    }
+
+    .Auth_Btn,
+    .Auth_Google_Btn {
+        padding: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    .Auth_Google_Btn {
+        margin-bottom: 30px;
+    }
+
+    .Auth_Google_Btn .icon {
+        font-size: 1.5rem;
+    }
+
+    .Auth_Form p {
+        font-size: 1.4rem;
+    }
+
+    .Info {
+        padding: 10px 0;
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    .ShowPassword .icon {
+        font-size: 2rem;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Auth_Form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+
+    .Auth_Form h2 {
+        font-size: 1.5rem;
+    }
+
+    .Auth_Form input {
+        font-size: 1rem;
+        border-bottom: 1px solid #545353;
+    }
+
+    .Auth_Btn,
+    .Auth_Google_Btn {
+        padding: 8px 0;
+        font-size: 1.1rem;
+    }
+
+    .Auth_Form p {
+        font-size: 1.1rem;
+    }
+
+    .Info {
+        padding: 8px 0;
+        font-size: 1.05rem;
+        margin-top: 5px;
+    }
+}

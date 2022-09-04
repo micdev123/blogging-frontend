@@ -1,0 +1,411 @@
+.Write_Component {
+    width: 100%;
+    min-height: 90vh;
+    position: relative;
+}
+
+.Write_Container {
+    width: 90%;
+    /* min-height: 90vh; */
+    margin: 1rem auto 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.Write_Img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.Write_Form_Container {
+    position: relative;
+}
+
+.Form_Group {
+    display: flex;
+    align-items: center;
+}
+
+.Form_Group .icon {
+    font-size: 2rem;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.Text_Input {
+    width: 87%;
+    margin-right: 20px;
+    font-size: 2rem;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: #464646;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: red; */
+}
+
+.Textarea {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: normal;
+    min-height: 80vh;
+}
+
+.Mobile_Publish {
+    display: none;
+}
+
+.Publish {
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 7px 20px;
+    color: white;
+    margin-top: 20px;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.Overlay_Form_Post {
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 100;
+}
+
+.Set_Fixed {
+    position: fixed;
+    width: 100%;
+}
+
+.CloseBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.Form_SideBar {
+    position: fixed;
+    top: 0rem;
+    right: 0;
+    width: 25rem;
+    height: 100vh;
+    background-color: #f8f8f8;
+    padding: 4rem 2rem;
+    z-index: 100;
+}
+
+.SideBar_Form_Group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.SideBar_Form_Group label {
+    font-size: 1.05rem;
+    font-weight: 550;
+    color: #5f5d5d;
+}
+
+.SideBar_Form_Group .Input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #8d8c8c;
+    outline: none;
+    background-color: transparent;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.SideBar_Form_Group p {
+    font-size: 0.9rem;
+    color: #5f5d5d;
+}
+
+.Now_Publish {
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 7px 20px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.Now_Publish .icon {
+    font-size: 1.3rem;
+}
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Write_Container {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .Form_Group .icon {
+        font-size: 2.2rem;
+    }
+
+    .Text_Input {
+        width: 80%;
+        font-size: 2.2rem;
+    }
+
+    .Textarea {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .Publish {
+        font-size: 1.4rem;
+        padding: 7px 20px;
+    }
+
+
+    .CloseBtn {
+        font-size: 2.5rem;
+    }
+
+    .Form_SideBar {
+        width: 27rem;
+    }
+
+    .SideBar_Form_Group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .SideBar_Form_Group label {
+        font-size: 1.5rem;
+    }
+
+    .SideBar_Form_Group .Input {
+        border-bottom: 1.7px solid #bebcbc;
+        font-size: 1.25rem;
+    }
+
+    .SideBar_Form_Group p {
+        font-size: 1.1rem;
+        color: #5f5d5d;
+    }
+
+    .Now_Publish {
+        font-size: 1.5rem;
+        padding: 8px 20px;
+    }
+
+    .Now_Publish .icon {
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Write_Container {
+        width: 100%;
+        padding: 1rem 10px 6rem 10px;
+    }
+
+    .Write_Img {
+        width: 100%;
+        height: 20rem;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .Form_Group .icon {
+        font-size: 1.9rem;
+    }
+
+    .Text_Input {
+        width: 100%;
+        font-size: 1.9rem;
+        margin-right: 5px;
+    }
+
+    .Textarea {
+        width: 100%;
+        font-size: 1.5rem;
+        height: fit-content;
+        border-bottom: 1px solid #dedede;
+    }
+
+    .Publish {
+        display: none;
+    }
+
+    .Mobile_Publish {
+        display: block;
+        background-color: teal;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        padding: 7px 20px;
+        color: white;
+        margin-top: 20px;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        cursor: pointer;
+        outline: none;
+    }
+
+
+    .CloseBtn {
+        font-size: 1.9rem;
+    }
+
+    .Form_SideBar {
+        width: 100%;
+    }
+
+    .SideBar_Form_Group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .SideBar_Form_Group label {
+        font-size: 1.15rem;
+        color: #464646;
+    }
+
+    .SideBar_Form_Group .Input {
+        width: 100%;
+        border-bottom: 1.2px solid #bebcbc;
+        font-size: 1rem;
+    }
+
+    .SideBar_Form_Group p {
+        font-size: 1rem;
+        color: #5f5d5d;
+    }
+
+    .Now_Publish {
+        font-size: 1.2rem;
+        padding: 7px 20px;
+    }
+
+    .Now_Publish .icon {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    .Write_Container {
+        width: 100%;
+        padding: 1rem 10px 6rem 10px;
+    }
+
+    .Write_Img {
+        width: 100%;
+        height: 20rem;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .Form_Group .icon {
+        font-size: 1.9rem;
+    }
+
+    .Text_Input {
+        width: 100%;
+        font-size: 1.7rem;
+        margin-right: 5px;
+    }
+
+    .Textarea {
+        width: 100%;
+        font-size: 1.3rem;
+        height: fit-content;
+        border-bottom: 1px solid #dedede;
+    }
+
+    .Publish {
+        display: none;
+    }
+
+    .Mobile_Publish {
+        display: block;
+        background-color: teal;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        padding: 7px 20px;
+        color: white;
+        margin-top: 20px;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        cursor: pointer;
+        outline: none;
+    }
+
+
+    .CloseBtn {
+        font-size: 1.9rem;
+    }
+
+    .Form_SideBar {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .SideBar_Form_Group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .SideBar_Form_Group label {
+        font-size: 1.15rem;
+        color: #464646;
+    }
+
+    .SideBar_Form_Group .Input {
+        width: 100%;
+        border-bottom: 1.2px solid #bebcbc;
+        font-size: 1rem;
+    }
+
+    .SideBar_Form_Group p {
+        font-size: 1rem;
+        color: #5f5d5d;
+    }
+
+    .Now_Publish {
+        font-size: 1.2rem;
+        padding: 7px 20px;
+    }
+
+    .Now_Publish .icon {
+        font-size: 1.3rem;
+    }
+}

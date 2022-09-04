@@ -1,0 +1,50 @@
+.Category_Component {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: red; */
+    gap: 20px;
+}
+
+.Category_Component .Tag{
+    background-color: #FFFFFF;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: 550;
+    color: #858585;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.Category_Component .Tag p::first-letter {
+    text-transform: capitalize;
+}
+
+.Category_Component p:hover {
+    color: #343434;
+}
+
+.Category_SinglePost_Component {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+}
+
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .Category_Component {
+        display: none;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .Category_Component {
+        display: none;
+    }
+}
