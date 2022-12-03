@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const BASE_URL = "https://mern--blogging.herokuapp.com/api/";
+const BASE_URL = "https://lively-fly-stole.cyclic.app/api/";
 
 
 export const publicRequest = axios.create({
